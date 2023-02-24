@@ -1,42 +1,42 @@
 {
   "products": [
     {
-      "image": "https://www.kfc.com/content/dam/kfc-sites/kfc/images/deals/new/chicken-sandwich-header.png",
+      "image": "https://www.eluniverso.com/resizer/kVRN-8ysEsvZAJuYbw0jghUAGq4=/670x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/B6NSSAJTQNC77I4L4FKTO6TE2U.png",
       "title": "New KFC Chicken Sandwich",
       "price": 4.99
     },
     {
-      "image": "https://www.kfc.com/content/dam/kfc-sites/kfc/images/products/buckets/hero-image-famous-bowl.png",
+      "image": "https://assets.website-files.com/609c03a1f9cad57c029dd4cf/615775b9eb25a3ab3b8fa4c2_FamousBowl_Criollo_PopcornChicken.png",
       "title": "Famous Bowl",
       "price": 5.99
     },
     {
-      "image": "https://www.kfc.com/content/dam/kfc-sites/kfc/images/products/buckets/hero-image-8-piece-meal.png",
+      "image": "https://kfcbd.com/storage/products/7M4ndd9lABbVh5vDTFhNdL4V7.jpg",
       "title": "8-Piece Meal",
       "price": 19.99
     },
     {
-      "image": "https://www.kfc.com/content/dam/kfc-sites/kfc/images/products/buckets/hero-image-12-piece-meal.png",
+      "image": "https://kfcbd.com/storage/products/JUn7NcRO0yUAWbycF7xd6shi4.jpg",
       "title": "12-Piece Meal",
       "price": 29.99
     },
     {
-      "image": "https://www.kfc.com/content/dam/kfc-sites/kfc/images/products/sandwiches/tenders-sandwich-hero.png",
+      "image": "https://carlsjr.cl/wp-content/uploads/2021/09/BIG-CHICKEN-TENDER.png",
       "title": "Tenders Sandwich",
       "price": 6.99
     },
     {
-      "image": "https://www.kfc.com/content/dam/kfc-sites/kfc/images/products/fill-ups/hero-image-famous-bowl-fill-up.png",
+      "image": "https://deliverlogic-common-assets.s3.amazonaws.com/editable/images/chowcall/menuitems/17584.jpg",
       "title": "Famous Bowl Fill Up",
       "price": 7.99
     },
     {
-      "image": "https://www.kfc.com/content/dam/kfc-sites/kfc/images/products/fill-ups/hero-image-chicken-breast-fill-up.png",
-      "title": "Chicken Breast Fill Up",
-      "price": 7.99
+      "image": "https://mma.prnewswire.com/media/490474/KFC_Zinger_5_Dollar_Fill_Up.jpg?w=200",
+      "title": "Chicken Fill Up",
+      "price": 4.99
     },
     {
-      "image": "https://www.kfc.com/content/dam/kfc-sites/kfc/images/products/fill-ups/hero-image-big-box-meal.png",
+      "image": "https://sawepecomcdn.blob.core.windows.net/kfc-web-ordering/KFC_CRO/19_BigBoxes/Big%20Boxes/web%20(2)%20(1)/KFC_CRO_zinger_box_packshot_440x440.png",
       "title": "Big Box Meal",
       "price": 10.99
     }

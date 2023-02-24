@@ -5,6 +5,7 @@
       <h3 class="product-card__title">{{ product.title }}</h3>
       <p class="product-card__price">${{ product.price }}</p>
     </div>
+    <button class="product-card__button">Add</button>
   </div>
 </template>
 
@@ -29,11 +30,12 @@ const { product } = defineProps({
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .product-card__image {
   width: 100%;
-  height: 200px;
+  min-height: 250px;
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -45,7 +47,7 @@ const { product } = defineProps({
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -55,15 +57,24 @@ const { product } = defineProps({
   margin: 0;
 }
 
-.product-card__description {
+.product-card__price {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
 }
 
-.product-card__price {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0;
+.product-card__button {
+  width: calc(100% - 20px);
+  height: 200px;
+  border: none;
+  background-color: #a2080c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.product-card__button:hover {
+  opacity: 0.8;
 }
 </style>
