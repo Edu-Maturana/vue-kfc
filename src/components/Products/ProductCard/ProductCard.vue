@@ -3,21 +3,20 @@
     <img class="product-card__image" :src="product.image" />
     <div class="product-card__info">
       <h3 class="product-card__title">{{ product.title }}</h3>
-      <p class="product-card__description">{{ product.description }}</p>
-      <p class="product-card__price">{{ product.price }}</p>
+      <p class="product-card__price">${{ product.price }}</p>
     </div>
   </div>
 </template>
 
 <script setup>
-export default {
-  props: {
-    product: {
-      type: Object,
-      required: true,
-    },
+import { defineProps } from "vue";
+
+const { product } = defineProps({
+  product: {
+    type: Object,
+    required: true,
   },
-};
+});
 </script>
 
 <style>
