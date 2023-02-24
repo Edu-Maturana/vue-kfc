@@ -8,7 +8,11 @@ const imgSrc = ref(
 
 <template>
   <div class="header">
+    <router-link class="link" to="/" active-class="active">Home</router-link>
     <img class="logo" :src="imgSrc" />
+    <router-link class="link" to="/cart" active-class="active"
+      >Cart</router-link
+    >
   </div>
 </template>
 
@@ -24,5 +28,22 @@ const imgSrc = ref(
 
 .logo {
   width: 50px;
+  margin: 0 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #a2080c;
+}
+
+.active {
+  color: #a2080c;
 }
 </style>
