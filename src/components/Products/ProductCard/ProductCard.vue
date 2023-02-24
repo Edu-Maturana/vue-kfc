@@ -5,17 +5,24 @@
       <h3 class="product-card__title">{{ product.title }}</h3>
       <p class="product-card__price">${{ product.price }}</p>
     </div>
-    <button class="product-card__button">Add</button>
+    <button class="product-card__button" @click="addToCart">Add</button>
   </div>
 </template>
 
 <script setup>
+import { useCartStore } from "../../../stores/cart";
+
 const { product } = defineProps({
   product: {
     type: Object,
     required: true,
   },
 });
+
+const cartStore = useCartStore();
+const addToCart = () => {
+  cartStore.addItem(product);
+};
 </script>
 
 <style>
