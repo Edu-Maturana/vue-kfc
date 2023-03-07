@@ -1,4 +1,3 @@
-import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 
 export const useCartStore = defineStore("cart", {
@@ -16,19 +15,19 @@ export const useCartStore = defineStore("cart", {
     itemsCount: (state) => {
       return state.items.length;
     },
+
+    cartItems: (state) => {
+      return state.items;
+    },
   },
 
   actions: {
     addItem(item) {
       const existingItem = this.items.find((i) => i.title === item.title);
 
-      if (existingItem) {
-        existingItem.quantity++;
-      } else {
+      if (!existingItem) {
         this.items.push({ ...item, quantity: 1 });
       }
-
-      console.log(this.items);
     },
 
     removeItem(item) {

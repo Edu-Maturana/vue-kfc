@@ -10,6 +10,9 @@
 </template>
 
 <script setup>
+import { h } from "vue";
+import { ElNotification } from "element-plus";
+
 import { useCartStore } from "../../../stores/cart";
 
 const { product } = defineProps({
@@ -20,7 +23,29 @@ const { product } = defineProps({
 });
 
 const cartStore = useCartStore();
+
+const alertProductIsAlreadyInCart = () => {
+  ElNotification({
+    title: "Info",
+    message: h(
+      "p",
+      { style: "color: teal" },
+      "This product is already in your cart"
+    ),
+    duration: 0,
+  });
+};
+
 const addToCart = () => {
+  const productIsAlreadyInCart = cartStore.cartItems.some(
+    (cartItem) => cartItem.title === product.title
+  );
+
+  if (productIsAlreadyInCart) {
+    alertProductIsAlreadyInCart();
+    return;
+  }
+
   cartStore.addItem(product);
 };
 </script>
